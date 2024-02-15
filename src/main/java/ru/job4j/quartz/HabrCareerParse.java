@@ -9,9 +9,9 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 
 public class HabrCareerParse {
-    private static final String SOURCE_LINK = "https://career.habr.com";
     public static final String PREFIX = "/vacancies?page=";
     public static final String SUFFIX = "&q=Java%20developer&type=all";
+    private static final String SOURCE_LINK = "https://career.habr.com";
 
     public static void main(String[] args) throws IOException {
         int pageNumber = 1;
