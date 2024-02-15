@@ -8,10 +8,10 @@ import java.time.format.DateTimeParseException;
 import static org.assertj.core.api.Assertions.*;
 class HabrCareerDateTimeParserTest {
     @Test
-    void whenDateTimeYYYYMMDDhhmmss () {
+    void whenDateTimeYYYYMMDDhhmmss() {
         DateTimeParser parser = new HabrCareerDateTimeParser();
         String date = "2024-05-06T00:00:00+00:00";
-        assertThat(parser.parse(date)).isEqualTo(LocalDateTime.of(2024, 05, 06 , 00, 00, 00));
+        assertThat(parser.parse(date)).isEqualTo(LocalDateTime.of(2024, 05, 06, 00, 00, 00));
     }
 
     @Test
